@@ -1,0 +1,81 @@
+.row{
+  display: flex;
+  box-sizing: border-box;
+}
+.row:hover{
+  background-color: rgb(217, 224, 223);
+  opacity: 0,8;
+}
+.completed{
+  text-decoration: line-through;
+  color: gray;
+}
+
+.completed .total{
+  color: gray;
+}
+div{
+  padding: 5px 0px;
+}
+
+.title{
+  display: flex;
+  width: 50%;
+  padding: 0 5px;
+}
+
+.price{
+  width: 15%;
+  padding: 0 5px;
+}
+
+.quantity{
+  width: 10%;
+  padding: 0 5px;
+}
+.total{
+  width: 15%;
+  color: green;
+  font-weight: bolder;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+.actions{
+  width: 10%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+.actions button{
+  border: none;
+  font-size: 12px;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.actions button:hover{
+  background-color: rgb(230, 114, 19);
+}
+
+@media screen and (max-width: 480px){
+
+  .title{
+      min-width: 30%;
+  }
+  .price,  .total{
+      min-width: 15%;
+      font-size: 12px;
+  }
+  .quantity{
+      min-width: 5%;
+      font-size: 12px;
+  }
+
+  .actions{
+      width: 20%;
+      font-size: 10px;
+  }
+}
